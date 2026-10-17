@@ -53,6 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+  
+<link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
 
