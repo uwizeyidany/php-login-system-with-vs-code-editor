@@ -1,84 +1,145 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
-.form-container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    width: 300px;
-    text-align: center;
-}
+/* ==================================
+   DARK DEVELOPER - LIGHT BACKGROUND
+   ================================== */
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+* {
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background: #F3F5FA;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login, Register and Dashboard cards */
+.container,
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+
+    background: #1F2937;
+    color: #F9FAFB;
+
+    border: 1px solid #374151;
+    border-radius: 20px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
+
+    text-align: center;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #F9FAFB;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/* Form fields */
+input {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    margin: 12px 0;
+
+    color: #F9FAFB;
+    background: #374151;
+
+    border: 1px solid #4B5563;
+    border-radius: 10px;
+
+    font-size: 15px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #D1D5DB;
+}
+
+input:focus {
+    border-color: #A78BFA;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+/* Buttons */
 button {
     width: 100%;
-    padding: 10px;
+    padding: 13px;
+    margin-top: 10px;
+
     border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+
+    background: #7C3AED;
+    color: #FFFFFF;
+
     font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background 0.2s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #6D28D9;
 }
 
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-.success {
-    color: green;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
+/* Links */
 a {
-    display: block;
-    margin-top: 10px;
-    color: #007BFF;
+    display: inline-block;
+    margin-top: 16px;
+
+    color: #C4B5FD;
     text-decoration: none;
 }
 
 a:hover {
+    color: #FFFFFF;
     text-decoration: underline;
 }
+
+/* Messages */
+.error {
+    color: #FCA5A5;
+    font-size: 14px;
+}
+
+.success {
+    color: #86EFAC;
+    font-size: 14px;
+}
+
+/* Optional social buttons */
 .social-login {
     margin-top: 15px;
 }
 
 .social-login button {
-    width: 100%;
     margin: 5px 0;
-    background-color: #4267B2; /* default Facebook blue */
 }
 
-.social-login button:nth-child(1) { background-color: #DB4437; } /* Google red */
-.social-login button:nth-child(2) { background-color: #4267B2; } /* Facebook blue */
-.social-login button:nth-child(3) { background-color: #C13584; } /* Instagram gradient pink */
-.social-login button:nth-child(4) { 
-    background-color: #C13584; /* Instagram pink */
+/* Mobile screens */
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .container,
+    .form-container {
+        padding: 24px 20px;
+        border-radius: 16px;
+    }
 }
-
-
-
