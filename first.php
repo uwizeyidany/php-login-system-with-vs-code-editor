@@ -1,22 +1,21 @@
 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+
+    <title>Danny Project</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
     <style>
-      fieldset{
-        width: 170px;
-        height: 230px;
-        background-color:green;
-      }
+        fieldset {
+            width: 170px;
+            height: 230px;
+            background-color: green;
+        }
     </style>
-  <alink rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 
 <body><center>
     
