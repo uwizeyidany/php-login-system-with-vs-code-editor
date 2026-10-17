@@ -16,6 +16,12 @@ $user = $result->fetch_assoc();
 <head>
 <link rel="stylesheet" href="styles.css">
 <title>Dashboard</title>
+    
+<head>
+    <title>My Project</title>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
 </head>
 <body>
 <div class="form-container">
